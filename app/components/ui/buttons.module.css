@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+  border: 2px solid var(--accent-color);
+  border-radius: 2.5rem;
+  background-color: transparent;
+  padding: 10px 20px 10px 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.buttonSecondary {
+  --accent-color: #0ae448;
+  --primary-color: black;
+}
+
+.button:hover .circle {
+  scale: 1;
+  transition: scale 0.25s ease-in-out;
+}
+
+.button:hover span,
+.button:hover i {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  width: 175%;
+  aspect-ratio: 1;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 0% 0%;
+  scale: 0;
+  transition: scale 0.2s ease-in-out, top 0.5s ease;
+  pointer-events: none;
+}
+
+.button span,
+.button i {
+  position: relative;
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: bolder;
+  transition: 0.1s ease;
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

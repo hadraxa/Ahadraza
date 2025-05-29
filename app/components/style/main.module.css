@@ -1,0 +1,11 @@
+.main {
+  width: 100%;
+}
+
+#smooth-wrapper {
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
+}

@@ -1,0 +1,29 @@
+.main {
+  overflow: hidden;
+  height: 130vh;
+}
+
+[data-scroll-container] {
+  height: 100vh;
+  overflow: hidden;
+}
+
+[data-scroll-section] {
+  position: relative;
+}
+.is-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.is-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  [data-scroll-container] {
+    height: auto;
+  }
+}

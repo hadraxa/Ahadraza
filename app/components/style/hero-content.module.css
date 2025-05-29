@@ -1,0 +1,58 @@
+.mainContent {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  padding: 20px;
+  z-index: 1;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 1px;
+}
+.myname {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.685);
+}
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  margin: 5px 0px 10px 0px;
+  width: auto;
+}
+.iconLink {
+  color: #ffffff;
+  transition: color 0.2s !important;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.linkedin:hover,
+.linkedin:focus {
+  color: #0077b5 !important;
+}
+.gmail:hover,
+.gmail:focus {
+  color: #ea4335 !important;
+}
+.github:hover {
+  color: #3f3f3f !important;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    top: 40%;
+    left: 10%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .myname {
+    font-size: 1.5rem;
+  }
+}

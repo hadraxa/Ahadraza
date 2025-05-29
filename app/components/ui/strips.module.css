@@ -1,0 +1,35 @@
+.StripCon {
+    width: 110%;
+    height: 10vh;
+    transform: rotate(-5deg);
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: -20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(145, 64, 95, 0.4);
+    border-radius: 12px;
+}
+
+.StripText {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text from wrapping */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AnimatedText {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    white-space: nowrap; /* Prevent text wrapping */
+    will-change: transform; /* Optimize for animations */
+}

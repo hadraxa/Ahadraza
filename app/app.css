@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+html,
+body {
+  font-family: "Lucida Console", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
