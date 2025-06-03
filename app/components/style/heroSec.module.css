@@ -27,3 +27,8 @@
     height: auto;
   }
 }
+
+.infoBoxSec {
+    position: relative;
+    top: 55%;
+  }
