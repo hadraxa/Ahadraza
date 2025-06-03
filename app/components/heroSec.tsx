@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./style/heroSec.module.css";
 import Header from "./header";
 import SideBar from "./sideBar";
@@ -13,6 +12,7 @@ function HeroSec() {
         <Header />
         <SideBar />
         <HeroContent />
+        <div className={style.infoBoxSec}>
         <InfoBox
           cards={[
             { topText: "age", bottomText: "20/y" },
@@ -21,7 +21,7 @@ function HeroSec() {
           ]}
           customBottomVal="20px"
         />
-
+</div>
         <div className={style.infoBoxSec}>
           <InfoBox
             cards={[
@@ -29,6 +29,7 @@ function HeroSec() {
               { topText: "Languages", bottomText: "20+" },
               { topText: "Certifications", bottomText: "2" },
             ]}
+            customBottomVal="-100%"
           />
         </div>
       </div>
