@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className={style.header}>
       <div className={style["head-container"]}>
-        <div className={style.logo}>Ahad Raza</div>
+        <div className={style.logo}>AhadRaza</div>
         <div className={style.text}>The Creator</div>
         <div className={style.socialIcons}>
           <ButtonEffect
